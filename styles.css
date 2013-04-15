@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+   Custom styles
+*/
+
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v5/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body {
+  background: url('concrete_wall.png') 0 0 repeat;
+  font-family: 'Arvo', serif;
+  text-transform: uppercase;
+}
+h1 {
+  color: #fff;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+li {
+  background: #fff;
+  background: -webkit-linear-gradient(-45deg, #fff, #a0a0a0);
+     background: -moz-linear-gradient(-45deg, #fff, #a0a0a0);
+      background: -ms-linear-gradient(-45deg, #fff, #a0a0a0);
+       background: -o-linear-gradient(-45deg, #fff, #a0a0a0);
+          background: linear-gradient(135deg, #fff, #a0a0a0);
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+     -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  float: left;
+  height: 275px;
+  padding: 10px;
+  width: 210px;
+}
+img {
+  border: 5px solid #fff;
+  height: 200px;
+  width: 200px;
+}
+h3 {
+  color: #666;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .25s ease-in-out;
+     -moz-transition: all .25s ease-in-out;
+       -o-transition: all .25s ease-in-out;
+          transition: all .25s ease-in-out;
+}
+a {
+  color: #4099FF;
+  text-decoration: none;
+}
+li:hover h3 {
+  opacity: 1;
+}
